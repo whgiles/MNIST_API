@@ -1,0 +1,4 @@
+author: hunter
+model_type: scikit-learn_0.23
+project_name: mnist_api
+project_version: v0.1
