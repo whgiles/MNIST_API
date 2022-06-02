@@ -1,1 +1,6 @@
 venv/
+models/model_1/__pycache__/
+data/MNIST/raw/
+.vscode/launch.json
+.DS_Store
+.gitignore

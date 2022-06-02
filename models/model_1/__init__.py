@@ -1,0 +1,1 @@
+from models.model_1.model import *
