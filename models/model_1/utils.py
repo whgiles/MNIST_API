@@ -34,14 +34,13 @@ class MyData():
     
         return train_dataloader, test_dataloader
 
-        # for X, y in test_dataloader:
-        #     print(X.shape)
-        #     print(y.shape)
-        #     break
     
-    def show_image(self, image_index=1):
+    def show_image(self, save=False,  image_index=1):
         x, _ = self.training_data[image_index]
+        print(x)
         plt.imshow(x.reshape(28,28), cmap='gray')
+        if save:
+            plt.savefig(f"image_{image_index}")
         plt.show()
         
     

@@ -20,7 +20,7 @@ class Model1:
 
 
     @staticmethod
-    def train(dataloader, model, loss_fn, optimizer):
+    def train(dataloader: DataLoader, model: Net, loss_fn, optimizer):
         DEVICE = 'cpu'
         size = len(dataloader.dataset)
         model.train()     
@@ -43,7 +43,7 @@ class Model1:
 
     
     @staticmethod
-    def test(dataloader, model, loss_fn):
+    def test(dataloader: DataLoader, model: Net, loss_fn):
         DEVICE = 'cpu'
         size = len(dataloader.dataset)
         num_batches = len(dataloader)
@@ -82,5 +82,5 @@ class Model1:
         
 
 if __name__ == "__main__":
-    MyData().show_image()
-    #Model1().run(5)
+    MyData().show_image(False, 4)
+    # Model1().run(10)
