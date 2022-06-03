@@ -9,3 +9,10 @@ torch
 torchvision 
 torchaudio
 python-mnist
+gitpython
+matplotlib
+torch 
+torchvision 
+torchaudio
+tqdm
+pillow
